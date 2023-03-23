@@ -8,6 +8,7 @@ Defina una funcion que dado un entero x devuelve una tupla con los numeros y y z
 
 descomponer :: Int -> (Int, Int)
 descomponer x =
-    unidades = x mod 10
-    if (unidades <= 5) then (unidades, x div 10)
-    else (unidades - 10, x div 10 + 1)
+    let 
+    unidades = x `mod` 10
+    in if (unidades <= 5) then (unidades, x `div` 10)
+    else (unidades - 10, x `div` 10 + 1)
