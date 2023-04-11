@@ -1,5 +1,7 @@
-mapA :: (a -> b) -> [a] -> [b]
-mapA f lista = [f y | y <- lista]
+import Prelude hiding (map, filter)
 
-filterA :: (a -> Bool) -> [a] -> [a]
-filterA f lista = [ x | x <- lista, f x ]
+map :: (a -> b) -> [a] -> [b]
+map f lista = [f y | y <- lista]
+
+filter :: (a -> Bool) -> [a] -> [a]
+filter f lista = [ x | x <- lista, f x ]
