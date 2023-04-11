@@ -1,4 +1,6 @@
 {-Defina la funcion length en terminos de map y sum-}
 
-lengthA :: [a] -> Int
-lengthA lista  = sum (map (\x -> 1) lista )
+import Prelude hiding (length)
+
+length :: [a] -> Int
+length lista  = sum (map (const 1) lista )
