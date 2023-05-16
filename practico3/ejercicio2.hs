@@ -1,0 +1,1 @@
+data Semaforo = Verde | Amarillo | Rojo deriving (Show)
